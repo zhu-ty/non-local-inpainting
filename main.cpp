@@ -306,7 +306,7 @@ int main(int argc, char *argv[])
 #ifndef IPOL_DEMO
 	IOUtility::write_rgb_image(output_str.str(), IOUtility::lab_to_rgb(output));
 	if (depth_exists)
-		IOUtility::write_rgb_image("inpainted_depth.png", IOUtility::get_depth(output));
+		IOUtility::write_mono_image("inpainted_depth.tiff", IOUtility::get_depth(output));
 #else
    // in the IPOL demo the output filename is fixed just output_name
 	IOUtility::write_rgb_image(output_name, IOUtility::lab_to_rgb(output));

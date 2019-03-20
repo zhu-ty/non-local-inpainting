@@ -20,7 +20,7 @@ SET( LIBS ${LIBS} IIOLIB )
 ## FFTW3 (not used)
 #SET( LIBS "${LIBS}" fftw3 m )
 
-
+SET( CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -ltiff")
 
 # OpenMP (not used yet)
 FIND_PACKAGE( OpenMP )
